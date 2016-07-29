@@ -79,6 +79,7 @@
 	- Eclipse Gradle Refresh
 	- gradle bootRun
 	- notepad src/main/java/com/hybrid/mapper/DeptMapper.java 인터페이스 생성
-	- notepad src/main/java/com/hybrid/mapper/DeptDao.java 인터페이스 생성
-
+	- notepad src/main/java/com/hybird/domain/Dept.java
+	- notepad src/test/java/com/hybrid/mapper/DeptMapperTest.java
+	- notepad src/main/webapp/dept.jsp
 
