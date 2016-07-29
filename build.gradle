@@ -18,7 +18,12 @@ apply plugin: 'java'
 apply plugin: 'eclipse-wtp'
 apply plugin: 'spring-boot'
 apply plugin: 'war'
+apply plugin: 'application'
+/*
+* 5. application plugin 설정
+*/
 
+mainClassName = 'com.hybrid.fx.MainApplication'
 
 war {
 	baseName = 'MosaicWeb'
@@ -29,6 +34,13 @@ targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
+	/*
+	* 6. Gluon 저장소 설정
+	*/
+	jcenter()
+    maven {
+        url 'http://nexus.gluonhq.com/nexus/content/repositories/releases'
+    }
 }
 
 configurations {
@@ -52,7 +64,10 @@ dependencies {
 	*/
 	compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.1.1'
 	compile files('src/main/webapp/WEB-INF/lib/ojdbc7.jar');
-	
+	/*
+	* 7. Gluon 설정
+	*/
+	compile 'com.gluonhq:particle:1.1.0'
 }
 
 
