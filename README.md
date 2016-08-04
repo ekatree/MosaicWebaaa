@@ -103,7 +103,11 @@
 		->> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1'
 	- builder.addDecoratorPath("/deco", "/WEB-INF/decoration/maindeco.jsp");
 		
-		
+11. Spring Security 설정
+	- mvnrepository.com >> search : spring boot security
+	- build.gradle dependencies 추가
+		->>  containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+		->>  containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
 		
 		
 		
